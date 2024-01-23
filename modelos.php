@@ -14,7 +14,6 @@ if (isset($_GET['marca'])) {
         
         $modelos = $client->ObtenerModelos($marcaId);
 
-        // Mostrar los modelos
         echo '<ul>';
         foreach ($modelos as $modelo) {
             echo '<li>' . htmlspecialchars($modelo) . '</li>';
